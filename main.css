@@ -165,18 +165,21 @@ header .header_content img {
 /* end header content */
 
 /* start about */
-#About{
+#About,
+#serveices{
     padding: 6rem 0;
 
 }
-#About h2 {
+#About h2, 
+#serveices h2 {
     text-align: center;
     font-size:  30px ;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-#About hr{
+#About hr, 
+#serveices hr{
     width: 100px;
     height: 3px;
     margin: 5px auto 0 ;
@@ -206,5 +209,49 @@ header .header_content img {
     padding: 5px;
     border-bottom: 1px solid #ddd;
     color: var(--gray);
+}
+
+#serveices{
+    background-color: var(--primary-color);
+}
+#serveices h2{
+    color: white;
+}
+#serveices .row  img {
+    max-width: 40px;
+
+
+}
+#serveices.skills-content{
+    margin-bottom: 2rem;
+    background-color: #0f272d;
+}
+
+#serveices .skills-content .row {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    text-align: center;
+    /* column-gap: 5px; */
+}
+#serveices .skills-content .row .item{
+    color: #fff;
+    background-color: #000;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+}
+#serveices .skills-content .row .item:nth-child(2) img {
+    max-width: 80px;
+}
+#serveices .skills-content .row .item:hover{
+    box-shadow: 10px 10px 10px #00f4ab0c;
+}
+#serveices .skills-content .row .item:nth-child(8) img {
+    max-width: 80px;
 }
 /* end about */
